@@ -1,0 +1,147 @@
+{
+  "arch": "efficientnet_v2_s",
+  "classes": [
+    "carton",
+    "metal",
+    "no_aprovechable",
+    "organico",
+    "papel",
+    "peligroso",
+    "plastico",
+    "vidrio"
+  ],
+  "img_size": 224,
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "material_to_color": {
+    "papel": "azul",
+    "carton": "azul",
+    "metal": "amarillo",
+    "plastico": "blanco",
+    "vidrio": "gris",
+    "organico": "marron",
+    "peligroso": "rojo",
+    "no_aprovechable": "negro"
+  },
+  "trained_epoch": 15,
+  "val_metrics": {
+    "loss": 0.6418510520325275,
+    "acc": 0.9640644361833953,
+    "macro_f1": 0.96478020720116,
+    "color_acc": 0.9719124328789757
+  },
+  "taxonomy": {
+    "norma": "NTP 900.058 - codigo de colores ampliado",
+    "materiales": [
+      {
+        "key": "carton",
+        "label": "Carton",
+        "color": "azul",
+        "tip": "Aplana las cajas y retira cintas o grapas antes de depositarlas."
+      },
+      {
+        "key": "metal",
+        "label": "Metal",
+        "color": "amarillo",
+        "tip": "Enjuaga latas y envases metalicos; aplastarlos ahorra espacio."
+      },
+      {
+        "key": "no_aprovechable",
+        "label": "No aprovechable",
+        "color": "negro",
+        "tip": "Residuos sin valor de reciclaje: papel higienico, colillas, ceramica, envoltorios mixtos."
+      },
+      {
+        "key": "organico",
+        "label": "Organico",
+        "color": "marron",
+        "tip": "Restos de comida y poda. Sin bolsas plasticas ni liquidos."
+      },
+      {
+        "key": "papel",
+        "label": "Papel",
+        "color": "azul",
+        "tip": "Manten el papel seco y sin restos de comida; el papel engrasado no se recicla."
+      },
+      {
+        "key": "peligroso",
+        "label": "Residuo peligroso",
+        "color": "rojo",
+        "tip": "Pilas, baterias, aerosoles y medicinas requieren punto de acopio especial. No lo mezcles."
+      },
+      {
+        "key": "plastico",
+        "label": "Plastico",
+        "color": "blanco",
+        "tip": "Vacia y enjuaga el envase; retira la tapa y deposita ambos."
+      },
+      {
+        "key": "vidrio",
+        "label": "Vidrio",
+        "color": "gris",
+        "tip": "Deposita el envase sin tapa. El vidrio roto va protegido para evitar cortes."
+      }
+    ],
+    "colores": [
+      {
+        "key": "azul",
+        "nombre": "Azul",
+        "residuos": "Papel y carton",
+        "hex": "#1565C0",
+        "texto_hex": "#FFFFFF"
+      },
+      {
+        "key": "amarillo",
+        "nombre": "Amarillo",
+        "residuos": "Metales",
+        "hex": "#F9A825",
+        "texto_hex": "#1A1A1A"
+      },
+      {
+        "key": "blanco",
+        "nombre": "Blanco",
+        "residuos": "Plasticos",
+        "hex": "#F5F5F5",
+        "texto_hex": "#1A1A1A"
+      },
+      {
+        "key": "gris",
+        "nombre": "Gris",
+        "residuos": "Vidrio",
+        "hex": "#757575",
+        "texto_hex": "#FFFFFF"
+      },
+      {
+        "key": "marron",
+        "nombre": "Marron",
+        "residuos": "Organicos",
+        "hex": "#6D4C41",
+        "texto_hex": "#FFFFFF"
+      },
+      {
+        "key": "rojo",
+        "nombre": "Rojo",
+        "residuos": "Peligrosos",
+        "hex": "#C62828",
+        "texto_hex": "#FFFFFF"
+      },
+      {
+        "key": "negro",
+        "nombre": "Negro",
+        "residuos": "Generales / No aprovechables",
+        "hex": "#212121",
+        "texto_hex": "#FFFFFF"
+      }
+    ]
+  }
+}

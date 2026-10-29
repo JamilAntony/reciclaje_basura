@@ -1,0 +1,290 @@
+{
+  "split": "test",
+  "n_imagenes": 1226,
+  "tta": true,
+  "arch": "efficientnet_v2_s",
+  "epoca": 15,
+  "material": {
+    "exactitud": 0.968189233278956,
+    "macro_f1": 0.9686634809485162,
+    "por_clase": [
+      {
+        "clase": "Carton",
+        "precision": 0.9772727272727273,
+        "recall": 0.945054945054945,
+        "f1": 0.9608938547486033,
+        "soporte": 182
+      },
+      {
+        "clase": "Metal",
+        "precision": 0.9345794392523364,
+        "recall": 0.9803921568627451,
+        "f1": 0.9569377990430622,
+        "soporte": 102
+      },
+      {
+        "clase": "No aprovechable",
+        "precision": 0.95,
+        "recall": 0.9620253164556962,
+        "f1": 0.9559748427672956,
+        "soporte": 79
+      },
+      {
+        "clase": "Organico",
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "soporte": 106
+      },
+      {
+        "clase": "Papel",
+        "precision": 0.9505494505494505,
+        "recall": 0.9774011299435028,
+        "f1": 0.9637883008356546,
+        "soporte": 177
+      },
+      {
+        "clase": "Residuo peligroso",
+        "precision": 0.95,
+        "recall": 1.0,
+        "f1": 0.9743589743589743,
+        "soporte": 76
+      },
+      {
+        "clase": "Plastico",
+        "precision": 0.964824120603015,
+        "recall": 0.9696969696969697,
+        "f1": 0.9672544080604534,
+        "soporte": 198
+      },
+      {
+        "clase": "Vidrio",
+        "precision": 0.9864864864864865,
+        "recall": 0.954248366013072,
+        "f1": 0.9700996677740864,
+        "soporte": 306
+      }
+    ],
+    "matriz_confusion": [
+      [
+        172,
+        1,
+        0,
+        0,
+        5,
+        2,
+        1,
+        1
+      ],
+      [
+        0,
+        100,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        76,
+        0,
+        2,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        106,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1,
+        0,
+        173,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        76,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        192,
+        3
+      ],
+      [
+        1,
+        6,
+        2,
+        0,
+        1,
+        0,
+        4,
+        292
+      ]
+    ],
+    "clases": [
+      "carton",
+      "metal",
+      "no_aprovechable",
+      "organico",
+      "papel",
+      "peligroso",
+      "plastico",
+      "vidrio"
+    ]
+  },
+  "color": {
+    "exactitud": 0.9738988580750407,
+    "macro_f1": 0.9723563700272517,
+    "por_clase": [
+      {
+        "clase": "Azul (Papel y carton)",
+        "precision": 0.9832402234636871,
+        "recall": 0.9805013927576601,
+        "f1": 0.9818688981868898,
+        "soporte": 359
+      },
+      {
+        "clase": "Amarillo (Metales)",
+        "precision": 0.9345794392523364,
+        "recall": 0.9803921568627451,
+        "f1": 0.9569377990430622,
+        "soporte": 102
+      },
+      {
+        "clase": "Blanco (Plasticos)",
+        "precision": 0.964824120603015,
+        "recall": 0.9696969696969697,
+        "f1": 0.9672544080604534,
+        "soporte": 198
+      },
+      {
+        "clase": "Gris (Vidrio)",
+        "precision": 0.9864864864864865,
+        "recall": 0.954248366013072,
+        "f1": 0.9700996677740864,
+        "soporte": 306
+      },
+      {
+        "clase": "Marron (Organicos)",
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "soporte": 106
+      },
+      {
+        "clase": "Rojo (Peligrosos)",
+        "precision": 0.95,
+        "recall": 1.0,
+        "f1": 0.9743589743589743,
+        "soporte": 76
+      },
+      {
+        "clase": "Negro (Generales / No aprovechables)",
+        "precision": 0.95,
+        "recall": 0.9620253164556962,
+        "f1": 0.9559748427672956,
+        "soporte": 79
+      }
+    ],
+    "matriz_confusion": [
+      [
+        352,
+        1,
+        2,
+        1,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        100,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        2,
+        0,
+        192,
+        3,
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        6,
+        4,
+        292,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        106,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        76,
+        0
+      ],
+      [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        76
+      ]
+    ],
+    "clases": [
+      "azul",
+      "amarillo",
+      "blanco",
+      "gris",
+      "marron",
+      "rojo",
+      "negro"
+    ]
+  }
+}

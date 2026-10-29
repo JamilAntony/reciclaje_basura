@@ -1,0 +1,27 @@
+# Clasificador de residuos NTP 900.058
+#
+# Este proyecto usa la GPU del equipo (RTX 5060, CUDA 13.2). Instala primero
+# estas dependencias y despues torch con el indice CUDA que corresponda:
+#
+#   pip install -r requirements.txt
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu132
+#
+# Sin GPU NVIDIA:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#
+# Comprobar que la GPU se detecta:
+#   python -c "import torch; print(torch.cuda.is_available(), torch.cuda.get_device_name(0))"
+
+# --- entrenamiento y evaluacion ---
+numpy
+pillow
+matplotlib
+
+# --- backend de inferencia ---
+fastapi
+uvicorn[standard]
+python-multipart
+
+# --- torch se instala aparte, ver arriba ---
+torch
+torchvision

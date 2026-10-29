@@ -1,0 +1,15 @@
+# El proyecto se edita en Windows pero el código usa finales de línea LF.
+# Normalizar en el repositorio evita que un clon en Linux o macOS vea el
+# archivo entero como modificado.
+* text=auto eol=lf
+
+# Scripts de PowerShell: CRLF, que es lo que espera Windows.
+*.ps1 text eol=crlf
+
+# Binarios: que git no intente convertir nada.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pt binary
+*.onnx binary
+*.zip binary
